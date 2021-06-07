@@ -2,11 +2,11 @@
 
 ## Atualize os seus dados:
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Pedro Araujo Lage
+- Matrícula: 16.1.8374
+- Curso: Engenharia de Computação
+- Semestre/Ano correntes: 2021/2
+- Link para o seu GitHub: [https://github.com/PedroALage] (https://github.com/PedroALage)
 
 ## [Projeto final:](./Projeto/README.md) 
 
