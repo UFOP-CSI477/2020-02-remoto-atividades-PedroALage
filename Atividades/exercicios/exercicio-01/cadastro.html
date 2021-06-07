@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de pessoas</title>
+</head>
+<body>
+
+    <h1>Cadastro</h1>
+
+    <h3>Insira suas informações para realizar o cadastro</h3>
+
+    <form method="GET" action="validar.html">
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" placeholder="e-mail pessoal">
+        </div>
+
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco">
+        </div>
+
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+        </div>
+
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone">
+        </div>
+
+        <div>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario">
+        </div>
+
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="text" name="senha" id="senha">
+        </div>
+
+        <div>
+            <label>Gênero:</label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="NB">
+                <label for="naobinario">Não binario</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="semresposta" value="SR">
+                <label for="semresposta">Prefiro não informar</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+        <br>
+        <a href="home.html">Voltar</a>
+
+    </form>
+    
+</body>
+</html>
