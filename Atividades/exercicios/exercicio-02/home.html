@@ -6,41 +6,75 @@
         <title>Home</title>
 
         <style type="text/css">
+
+            html {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+
             body {
                 background-color: rgba(29, 1, 48, 0.911);
             }
 
             h1 {
                 margin-top: 0;
-                margin-left: 320pt;
                 font-size: 50pt;
+                text-align: center;
                 color: rgba(172, 255, 47, 0.918);
             }
 
             h3 {
                 font-size: 20pt;
+                text-align: center;
                 color: rgba(172, 255, 47, 0.918);
             }
 
             p {
                 color: honeydew;
-                font-family: arial;
-                font-size: 12pt;
+                font-size: 14pt;
+                text-align: center;
             }
 
             a {
-                color:tomato;
+                color: rgba(29, 1, 48, 0.911);
+                text-decoration: none;
+                padding: 10px;
+                direction: row;
+            }
+
+            a:active{
+                color: honeydew;
+            }
+
+            a:visited{
+                color: rgba(172, 255, 47, 0.918);
             }
 
             img {
-                margin-left: 300pt;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
 
-            #codigo{
-                border-color: #c6c6c6;
-                color: yellow;
-                border-style: solid;
-                border-radius: 15px;
+            .flex {
+                display: flex;
+                flex-direction: row;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+
+            .flex div {
+                background-color: tomato;
+                width: 200px;
+                margin: 40px;
+                line-height: 80px;
+                text-align: center;
+                border-radius: 20px;
+            }
+
+            .flex div:hover{
+                background-color: rgba(172, 255, 47, 0.918);
+                font-weight: bold;
             }
 
         </style>
@@ -54,25 +88,40 @@
 
         <p>Esta e uma pagina desenvolvidade para suportar um banco de dados Web</p>
 
-        <h3>Links:</h3>
+        <h3>Estas são as opções diponiveis</h3>
 
-        <div>
-            <p>Ir para <a href="cadastro.html">Cadastro</a></p>
+        <div class="flex">
+            <div>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
 
-            <p>Ir para <a href="relatorio.html">Relatorio</a></p>
+            <div>
+                <a href="relatorio.html">Relatorio</a>
+            </div>
+                
+            <div>
+                <a href="estados.html">Estados</a>
+            </div>               
 
-            <p>Ir para <a href="estados.html">Estados</a></p>
+            <div>
+                <a href="cidades.html">Cidades</a>
+            </div>
 
-            <p>Ir para <a href="cidades.html">Cidades</a></p>
+            <div>
+                <a href="produtos.html">Produtos</a>
+            </div>               
 
-            <p>Ir para <a href="produtos.html">Produtos</a></p>
+            <div>
+                <a href="pessoas.html">Pessoas</a>
+            </div>             
 
-            <p>Ir para <a href="pessoas.html">Pessoas</a></p>
+            <div>
+                <a href="compras.html">Compras</a>
+            </div>     
 
-            <p>Ir para <a href="compras.html">Compras</a></p>
-
-            <p>Ir para <a href="perfil.html">Perfil</a></p>
-
+            <div>
+                <a href="perfil.html">Perfil</a>
+            </div>        
         </div>
 
         <div>
