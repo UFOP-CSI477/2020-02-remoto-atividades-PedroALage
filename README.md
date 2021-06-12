@@ -10,5 +10,6 @@
 
 ## [Projeto final:](./Projeto/README.md) 
 
-Apresente uma breve descrição do seu projeto.
+Sistema de gerenciamento para uma marcenaria.
+Onde seria possível executar vendas, fazer moveis sobre medida, gerenciar funcionários e materiais, dentre outras funcionalidades.
 
