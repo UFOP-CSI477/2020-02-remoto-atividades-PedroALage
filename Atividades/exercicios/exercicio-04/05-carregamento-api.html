@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de classes - IBGE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+<body onload="carregarClasses()" class="bg-primary">
+
+    <div class="conteiner">
+
+        <h1 class="text-light text-center p-3">Funções das classes</h1>
+
+        <form>
+
+            <div class="row p-3 justify-content-md-center">
+                <div class="col col-lg-8 text-center">
+
+                    <select class="form-select" name="classes" id="classes" onchange="carregarSubclasses()">
+                        <option value="">Selecione o grupo de classes:</option>
+                    </select>
+                    
+                </div>
+            </div>
+
+            <div class="row p-3 justify-content-md-center">
+                <div class="col col-lg-8 text-center">
+
+                    <select class="form-select" name="subclasses" id="subclasses" onchange="carregarAtividades()">
+                        <option value="">Selecione a subclasse:</option>
+                    </select>
+                    
+                </div>
+            </div>
+    
+            <div class="row p-3 justify-content-md-center">
+                <div class="col col-lg-8 text-center">
+
+                    <textarea class="bg-light" name="atividades" id="atividades" cols="100" rows="10" disabled></textarea>
+                    
+                </div>
+            </div>
+    
+        </form>
+
+    </div>
+
+    <script src="05-carregamento-api.js"></script>
+    
+</body>
+</html>
