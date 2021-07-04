@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competição de carrinho de rolimã</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+        crossorigin="anonymous">
+
+    <script src="01-corrida.js"></script>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Tabela da corrida de carrinho de rolimã</h1>
+
+        <p>Insira as informaçoes dos competidores na primeira tabela</p>
+
+        <form name="dados">
+        
+            <table class="table table-bordered text-center">
+
+                <caption>Informação dos competidores</caption>
+
+                <thead>
+
+                    <tr>
+                        <th>Largada</th>
+                        <th>Competidor(a)</th>
+                        <th>Tempo (s)</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+
+                        <td>
+                            <input type="text" name="nome1" id="nome1" value="" class="form-control">
+                        </td>
+
+                        <td>
+                            <input type="text" name="tempo1" id="tempo1" value="" class="form-control">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <input type="text" name="nome2" id="nome2" value="" class="form-control">
+                        </td>
+
+                        <td>
+                            <input type="text" name="tempo2" id="tempo2" value="" class="form-control">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <input type="text" name="nome3" id="nome3" value="" class="form-control">
+                        </td>
+
+                        <td>
+                            <input type="text" name="tempo3" id="tempo3" value="" class="form-control">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <input type="text" name="nome4" id="nome4" value="" class="form-control">
+                        </td>
+
+                        <td>
+                            <input type="text" name="tempo4" id="tempo4" value="" class="form-control">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <input type="text" name="nome5" id="nome5" value="" class="form-control">
+                        </td>
+
+                        <td>
+                            <input type="text" name="tempo5" id="tempo5" value="" class="form-control">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            <input type="text" name="nome6" id="nome6" value="" class="form-control">
+                        </td>
+
+                        <td>
+                            <input type="text" name="tempo6" id="tempo6" value="" class="form-control">
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <button type="button" class="btn btn-success mb-3" onclick="calcular()">Calcular</button>
+            </div>
+
+            <!--  ///////////////////////////// Separando as tabelas //////////////////////////////////-->
+
+            <table class="table table-bordered">
+
+                <caption>Resultado</caption>
+                
+                <thead>
+                
+                    <tr>
+                        <th>Posição</th>
+                        <th>Largada</th>
+                        <th>Competidor(a)</th>
+                        <th>Tempo (s)</th>
+                        <th>Resultado</th>
+                    </tr>
+                
+                </thead>
+                
+                <tbody>
+                
+                    <tr>
+                        <td>
+                            <input type="text" name="posicao11" id="posicao11" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="largada11" id="largada11" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="nome11" id="nome11" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="tempo11" id="tempo11" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="resultado11" id="resultado11" value="" disabled class="form-control text-center">
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <input type="text" name="posicao22" id="posicao22" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="largada22" id="largada22" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="nome22" id="nome22" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="tempo22" id="tempo22" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="resultado22" id="resultado22" value="" disabled class="form-control text-center">
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <input type="text" name="posicao33" id="posicao33" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="largada33" id="largada33" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="nome33" id="nome33" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="tempo33" id="tempo33" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="resultado33" id="resultado33" value="" disabled class="form-control text-center">
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <input type="text" name="posicao44" id="posicao44" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="largada44" id="largada44" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="nome44" id="nome44" value="" disabled class="form-control text-center">
+                        </td> 
+                        <td>
+                            <input type="text" name="tempo44" id="tempo44" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="resultado44" id="resultado44" value="" disabled class="form-control text-center">
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <input type="text" name="posicao55" id="posicao55" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="largada55" id="largada55" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="nome55" id="nome55" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="tempo55" id="tempo55" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="resultado55" id="resultado55" value="" disabled class="form-control text-center">
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <input type="text" name="posicao66" id="posicao66" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="largada66" id="largada66" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="nome66" id="nome66" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="tempo66" id="tempo66" value="" disabled class="form-control text-center">
+                        </td>
+                        <td>
+                            <input type="text" name="resultado66" id="resultado66" value="" disabled class="form-control text-center">
+                        </td>
+                    </tr>
+                </tbody>
+                
+            </table>
+
+        </form>
+        
+    </div>
+
+</body>
+</html>

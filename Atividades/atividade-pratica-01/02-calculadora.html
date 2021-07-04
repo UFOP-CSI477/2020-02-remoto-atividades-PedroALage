@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+        crossorigin="anonymous">
+
+    <script src="02-calculadora.js"></script>
+
+</head>
+<body onload="iniciar()">
+
+  <form name="dados">
+
+    <div class="container">
+
+      <div class="row p-4 justify-content-md-center text-center">
+        
+        <h1>Calculadora</h1>
+
+        <p>A calculadora não prioriza multiplicações nem divisões, tambem não e possivel iniciar com numero negativo</p>
+  
+      </div>
+  
+      <div class="row p-4 justify-content-md-center text-center">
+  
+        <div class="col-6">
+          <input type="text" name="tela" id="tela" value="" disabled class="form-control text-center">
+          <input type="text" name="tela2" id="tela2" value="" disabled class="form-control text-center">
+        </div>
+  
+      </div>
+        
+      <div class="row p-4 justify-content-md-center text-center">
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(7)">7</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(8)">8</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(9)">9</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-secondary btn-lg" onclick="operador('+')">+</button>
+        </div>
+  
+      </div>
+  
+      <div class="row p-4 justify-content-md-center text-center">
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(4)">4</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(5)">5</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(6)">6</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-secondary btn-lg" onclick="operador('-')">-</button>
+        </div>
+  
+      </div>
+  
+      <div class="row p-4 justify-content-md-center text-center">
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(1)">1</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(2)">2</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(3)">3</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-secondary btn-lg" onclick="operador('x')">x</button>
+        </div>
+  
+      </div>
+  
+      <div class="row p-4 justify-content-md-center text-center">
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero(0)">0</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-primary btn-lg" onclick="numero('.')">.</button>
+        </div>
+  
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-success btn-lg" onclick="calcular()">=</button>
+        </div>
+  
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-secondary btn-lg" onclick="operador('/')">/</button>
+        </div>
+  
+      </div>
+
+      <div class="row p-4 justify-content-md-center text-center">
+
+        <div class="col col-lg-1">
+          <button type="button" class="btn btn-warning btn-lg" onclick="zerar()">C</button>
+        </div>
+
+      </div>
+  
+    </div>
+
+  </form>
+  
+    
+</body>
+</html>
