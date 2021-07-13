@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de produtos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <h1 class="text-center">Tabela de Produtos</h1>
+
+    <?php
+
+        echo  '<div class="container text-center">';
+
+        echo '<table class="table table-bordered text-center table-primary table-striped table-hover">';
+
+            echo '<thead class="table-dark">';
+
+                echo '<tr>';
+                    echo '<th>ID</th>';
+                    echo '<th>Nome</th>';
+                    echo '<th>UM</th>';
+                echo '</tr>';
+
+            echo '</thead>';
+
+            echo '<tbody>';
+
+                while($e = $produtos->fetch()) {
+
+                    echo '<tr>';
+                        echo '<td>' .$e["id"] .'</td>';
+                        echo '<td>' .$e["nome"] .'</td>';
+                        echo '<td>' .$e["um"] .'</td>';
+                    echo '</tr>';
+                }
+
+            echo '</tbody>';
+
+        echo '</table>';
+
+        echo '<a href="produtosViewInsert.php" class="btn btn-primary">Inserir</a>';
+
+        echo '</div>';
+    ?>
+    
+</body>
+</html>
