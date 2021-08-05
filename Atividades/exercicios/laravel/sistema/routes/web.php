@@ -14,12 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Models\Produto;
+use App\Http\Controllers\ProdutoController;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('principal');
+})->name('principal');
 
-Route::get('/produtos/todos', function() {
+Route::resource('/produtos', ProdutoController::class);
+
+/* Route::get('/produtos/todos', function() {
 
     $produtos = Produto::all();
 
@@ -39,3 +42,4 @@ Route::get('/produtos/{id}', function($id) {
     return view('lista', ['dados' => $produto ]);
     
 });
+ */
